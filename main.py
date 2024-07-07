@@ -16,7 +16,9 @@ dp = Dispatcher(storage=MemoryStorage())
 async def on_startup():
     await bot.set_my_commands([
         BotCommand(command="/start", description="Запустить бота"),
-        BotCommand(command="/help", description="Получить помощь по командам бота")
+        BotCommand(command="/help", description="Получить помощь по командам бота"),
+        BotCommand(command="/links", description="Показать ссылки на новости/музыку/видео"),
+        BotCommand(command="/dynamic", description="Показать динамическое меню")
     ])
 
 async def main():
